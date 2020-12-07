@@ -29,7 +29,7 @@ export const Cards = styled.div`
     border: 1px solid #ccc;
     box-shadow: 26px 10px 44px #000;
     cursor: pointer;
-    transition: div 0.6s;
+    transition: 0.2s;
     &:hover {
       transform: translateX(-10px);
     }
