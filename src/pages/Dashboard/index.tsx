@@ -16,7 +16,7 @@ const Dashboard: React.FC = () => {
   useEffect(() => {
     api.get('characters').then(res => {
       const cards = res.data.results;
-      setRepositories(cards.slice(0, 9));
+      setRepositories(cards.slice(0, 10));
     });
   }, []);
 
@@ -29,7 +29,11 @@ const Dashboard: React.FC = () => {
       <Cards>
         {repositories.map(repository => (
           <div key={repository.id}>
-            <img src={repository.image} alt={repository.name} />
+            <img
+              src={repository.image}
+              alt={repository.name}
+              title={repository.name}
+            />
           </div>
         ))}
       </Cards>
