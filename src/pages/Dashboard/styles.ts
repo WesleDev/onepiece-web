@@ -20,6 +20,13 @@ export const Cards = styled.div`
   gap: 10;
   margin-top: 10px;
 
+  section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    margin-top: 10px;
+  }
+
   div {
     width: 266px;
     height: 400px;
@@ -39,5 +46,13 @@ export const Cards = styled.div`
     height: 100%;
     padding: 15px;
     margin: 0 10px;
+  }
+
+  span {
+    height: 304px;
+    position: absolute;
+    left: 538px;
+    top: 400px;
+    right: 0;
   }
 `;
